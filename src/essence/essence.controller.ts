@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body } from '@nestjs/common';
 import { EssenceService } from './essence.service';
 import { CreateEssenceDto } from './dto/create-essence.dto';
 
