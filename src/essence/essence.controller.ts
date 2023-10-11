@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { EssenceService } from './essence.service';
 import { CreateEssenceDto } from './dto/create-essence.dto';
 
@@ -9,10 +9,5 @@ export class EssenceController {
   @Post()
   create(@Body() { title, type }: CreateEssenceDto) {
     return this.essenceService.createEssence({ title, type });
-  }
-
-  @Get()
-  findAll() {
-    return this.essenceService.findAll();
   }
 }
