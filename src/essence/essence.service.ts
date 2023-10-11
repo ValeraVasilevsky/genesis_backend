@@ -10,8 +10,4 @@ export class EssenceService {
 
     return data;
   }
-
-  async findAll() {
-    return '';
-  }
 }

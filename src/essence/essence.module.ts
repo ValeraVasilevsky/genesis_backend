@@ -3,7 +3,6 @@ import { EssenceService } from './essence.service';
 import { EssenceController } from './essence.controller';
 
 @Module({
-  imports: [],
   controllers: [EssenceController],
   providers: [EssenceService],
 })
